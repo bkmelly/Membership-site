@@ -8,7 +8,7 @@ const authenticateToken = require('../middleware/authMiddleware')
 router.get('/', authenticateToken, async (req, res) => {
   console.log('Dashboard route hit with user:', req.user);
   try {
-    const user = await User.findById(req.user._id).select('-password');
+    const user = await User.findById(req.user.id).select('-password');
     if (!user) {
       console.error('User not found');
       return res.status(404).json({ message: 'User not found' });

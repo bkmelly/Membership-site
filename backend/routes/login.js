@@ -3,7 +3,7 @@ const {User} = require('../models/user')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
-router.post('/login', async (req, res) => {
+router.post('/', async (req, res) => {
   const { email, password } = req.body;
   console.log("Login request received:", { email, password });
   console.log('Incoming login request payload:', req.body);
