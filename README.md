@@ -54,17 +54,13 @@ This is a Membership Wesite for a Free Guide/Small Course ,for an Offer I am cre
 ---
 
 ### **Known Issues**
-1. **500 Error on Authentication Routes**:
-   - This occurs during testing with Postman. To debug:
-     - Verify route logic and request payloads.
-     - Check database models and schemas for inconsistencies.
-
+1. loging in , unable to post form data 
 ---
 
 ### **Next Steps**
 1. Debug and fix the 500 error on authentication routes.
-2. Proceed with frontend-backend integration.
-3. Secure the dashboard route with JWT token verification middleware.
+<!-- 2. Proceed with frontend-backend integration.
+3. Secure the dashboard route with JWT token verification middleware. -->
 4. Implement email verification using `nodemailer`.
 
 ---
